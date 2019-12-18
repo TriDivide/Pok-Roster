@@ -13,6 +13,7 @@
 		A8104A9D23A97D8A0079B987 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8104A9C23A97D8A0079B987 /* Assets.xcassets */; };
 		A8104AA023A97D8A0079B987 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8104A9F23A97D8A0079B987 /* Preview Assets.xcassets */; };
 		A8104AA323A97D8A0079B987 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8104AA123A97D8A0079B987 /* LaunchScreen.storyboard */; };
+		A890F66423AABCA400444EAC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A890F66323AABCA400444EAC /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A8104A9F23A97D8A0079B987 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A8104AA223A97D8A0079B987 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8104AA423A97D8A0079B987 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A890F66323AABCA400444EAC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		A8104A9523A97D850079B987 /* PokéRoster */ = {
 			isa = PBXGroup;
 			children = (
+				A890F66323AABCA400444EAC /* GoogleService-Info.plist */,
 				A8104A9623A97D850079B987 /* AppDelegate.swift */,
 				A8104A9823A97D850079B987 /* SceneDelegate.swift */,
 				A8104A9A23A97D850079B987 /* ContentView.swift */,
@@ -134,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8104AA323A97D8A0079B987 /* LaunchScreen.storyboard in Resources */,
+				A890F66423AABCA400444EAC /* GoogleService-Info.plist in Resources */,
 				A8104AA023A97D8A0079B987 /* Preview Assets.xcassets in Resources */,
 				A8104A9D23A97D8A0079B987 /* Assets.xcassets in Resources */,
 			);
