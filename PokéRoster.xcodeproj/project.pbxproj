@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		A808D8E123B01EA4004CC39E /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A808D8E023B01EA4004CC39E /* BaseModel.swift */; };
 		A808D8E323B01ED8004CC39E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A808D8E223B01ED8004CC39E /* User.swift */; };
+		A808D8E523B01FD9004CC39E /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A808D8E423B01FD9004CC39E /* UserModel.swift */; };
+		A808D8E723B02150004CC39E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A808D8E623B02150004CC39E /* Extensions.swift */; };
+		A808D8E923B021D5004CC39E /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = A808D8E823B021D5004CC39E /* Error.swift */; };
 		A8104A9723A97D850079B987 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8104A9623A97D850079B987 /* AppDelegate.swift */; };
 		A8104A9923A97D850079B987 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8104A9823A97D850079B987 /* SceneDelegate.swift */; };
 		A8104A9B23A97D850079B987 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8104A9A23A97D850079B987 /* ContentView.swift */; };
@@ -23,6 +26,9 @@
 		57E07530EC83438D101451CF /* Pods_Poke_Roster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Poke_Roster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A808D8E023B01EA4004CC39E /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		A808D8E223B01ED8004CC39E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A808D8E423B01FD9004CC39E /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		A808D8E623B02150004CC39E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = "PokéRoster/Extensions.swift"; sourceTree = SOURCE_ROOT; };
+		A808D8E823B021D5004CC39E /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		A8104A9323A97D850079B987 /* PokéRoster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PokéRoster.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8104A9623A97D850079B987 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8104A9823A97D850079B987 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				A808D8E023B01EA4004CC39E /* BaseModel.swift */,
+				A808D8E423B01FD9004CC39E /* UserModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -102,6 +109,7 @@
 		A8104A9523A97D850079B987 /* PokéRoster */ = {
 			isa = PBXGroup;
 			children = (
+				A808D8E623B02150004CC39E /* Extensions.swift */,
 				A808D8DB23B01E12004CC39E /* DataModel */,
 				A890F66323AABCA400444EAC /* GoogleService-Info.plist */,
 				A8104A9623A97D850079B987 /* AppDelegate.swift */,
@@ -111,6 +119,7 @@
 				A8104AA123A97D8A0079B987 /* LaunchScreen.storyboard */,
 				A8104AA423A97D8A0079B987 /* Info.plist */,
 				A8104A9E23A97D8A0079B987 /* Preview Content */,
+				A808D8E823B021D5004CC39E /* Error.swift */,
 			);
 			path = "PokéRoster";
 			sourceTree = "<group>";
@@ -248,11 +257,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A808D8E923B021D5004CC39E /* Error.swift in Sources */,
 				A8104A9723A97D850079B987 /* AppDelegate.swift in Sources */,
 				A8104A9923A97D850079B987 /* SceneDelegate.swift in Sources */,
 				A8104A9B23A97D850079B987 /* ContentView.swift in Sources */,
 				A808D8E323B01ED8004CC39E /* User.swift in Sources */,
+				A808D8E523B01FD9004CC39E /* UserModel.swift in Sources */,
 				A808D8E123B01EA4004CC39E /* BaseModel.swift in Sources */,
+				A808D8E723B02150004CC39E /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
