@@ -23,15 +23,25 @@ class UserModel: BaseModel {
         }
     }
     
-    public func doSignUp(email: String, password: String, completion: @escaping(Error?) -> Void) {
+    public func doSignUpAndLogin(username: String, email: String, password: String, completion: @escaping(Error?) -> Void) {
         Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
             if let error = error {
                 completion(error)
                 return
             }
             
-            completion(nil)
-            
+            guard let userId = authResult?.user.uid else {
+                completion(UserModelError.AuthenticationFailed)
+                return
+            }
+            self.setUserData(email: email, username: username, userId: userId, completion: completion)
+        }
+    }
+    
+    public func setUserData(email: String, username: String, userId: String, completion: @escaping(Error?) -> Void) {
+        let user = User(email: email, username: username)
+        userRef.document(userId).setData(user.toMap(), merge: true) { error in
+            completion(error)
         }
     }
     
