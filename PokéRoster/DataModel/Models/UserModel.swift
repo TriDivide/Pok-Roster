@@ -1,5 +1,4 @@
-import FirebaseAuth
-import FirebaseFirestore
+import Firebase
 
 class UserModel: BaseModel {
     

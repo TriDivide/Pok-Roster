@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		11F14805213E6C4DCF3C7F7E /* Pods_Poke_Roster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE18D359581174CFBC0BD1D8 /* Pods_Poke_Roster.framework */; };
 		A808D8E123B01EA4004CC39E /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A808D8E023B01EA4004CC39E /* BaseModel.swift */; };
 		A808D8E323B01ED8004CC39E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A808D8E223B01ED8004CC39E /* User.swift */; };
 		A808D8E523B01FD9004CC39E /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A808D8E423B01FD9004CC39E /* UserModel.swift */; };
@@ -20,11 +19,28 @@
 		A8104AA023A97D8A0079B987 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8104A9F23A97D8A0079B987 /* Preview Assets.xcassets */; };
 		A8104AA323A97D8A0079B987 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8104AA123A97D8A0079B987 /* LaunchScreen.storyboard */; };
 		A890F66423AABCA400444EAC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A890F66323AABCA400444EAC /* GoogleService-Info.plist */; };
+		A8FC4C1323B13E400010B419 /* BuildFile in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CF693FFD45232ADDF506A7AD /* libPods-PokéRoster.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 330DF389E51BA96132BC6925 /* libPods-PokéRoster.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A8FC4C1423B13E400010B419 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A8FC4C1323B13E400010B419 /* BuildFile in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		5B590B6F76DAD382EA19B6A7 /* Pods-PokéRoster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokéRoster.release.xcconfig"; path = "Target Support Files/Pods-PokéRoster/Pods-PokéRoster.release.xcconfig"; sourceTree = "<group>"; };
-		6EA052CD9A2B75D9DC0A8F12 /* Pods-PokéRoster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokéRoster.debug.xcconfig"; path = "Target Support Files/Pods-PokéRoster/Pods-PokéRoster.debug.xcconfig"; sourceTree = "<group>"; };
+		330DF389E51BA96132BC6925 /* libPods-PokéRoster.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PokéRoster.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5723BF7F48D962961C586BB5 /* Pods-PokéRoster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokéRoster.debug.xcconfig"; path = "Target Support Files/Pods-PokéRoster/Pods-PokéRoster.debug.xcconfig"; sourceTree = "<group>"; };
+		8D2BE4A0862328BC20BB6D99 /* Pods-PokéRoster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokéRoster.release.xcconfig"; path = "Target Support Files/Pods-PokéRoster/Pods-PokéRoster.release.xcconfig"; sourceTree = "<group>"; };
 		A808D8E023B01EA4004CC39E /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		A808D8E223B01ED8004CC39E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A808D8E423B01FD9004CC39E /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
@@ -39,7 +55,6 @@
 		A8104AA223A97D8A0079B987 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8104AA423A97D8A0079B987 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A890F66323AABCA400444EAC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		FE18D359581174CFBC0BD1D8 /* Pods_Poke_Roster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Poke_Roster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,21 +62,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11F14805213E6C4DCF3C7F7E /* Pods_Poke_Roster.framework in Frameworks */,
+				CF693FFD45232ADDF506A7AD /* libPods-PokéRoster.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		62DE9C5E3B2D2188A2C03DE8 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FE18D359581174CFBC0BD1D8 /* Pods_Poke_Roster.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		A808D8DB23B01E12004CC39E /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,7 +101,7 @@
 				A8104A9523A97D850079B987 /* PokéRoster */,
 				A8104A9423A97D850079B987 /* Products */,
 				AB2839C7FF602C9C05A6F44E /* Pods */,
-				62DE9C5E3B2D2188A2C03DE8 /* Frameworks */,
+				C740ECFFBCA2279B10B0CE11 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,10 +142,18 @@
 		AB2839C7FF602C9C05A6F44E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6EA052CD9A2B75D9DC0A8F12 /* Pods-PokéRoster.debug.xcconfig */,
-				5B590B6F76DAD382EA19B6A7 /* Pods-PokéRoster.release.xcconfig */,
+				5723BF7F48D962961C586BB5 /* Pods-PokéRoster.debug.xcconfig */,
+				8D2BE4A0862328BC20BB6D99 /* Pods-PokéRoster.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		C740ECFFBCA2279B10B0CE11 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				330DF389E51BA96132BC6925 /* libPods-PokéRoster.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,11 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8104AA723A97D8A0079B987 /* Build configuration list for PBXNativeTarget "PokéRoster" */;
 			buildPhases = (
-				794BC3C7B84CE9ADE0B69533 /* [CP] Check Pods Manifest.lock */,
+				A19B191F4326E5E2FA5B1DB5 /* [CP] Check Pods Manifest.lock */,
 				A8104A8F23A97D850079B987 /* Sources */,
 				A8104A9023A97D850079B987 /* Frameworks */,
 				A8104A9123A97D850079B987 /* Resources */,
-				E52AFDAB79EE9E2490074725 /* [CP] Embed Pods Frameworks */,
+				A8FC4C1423B13E400010B419 /* Embed Frameworks */,
+				6EAFA1B874693FD7DCD4150E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -211,7 +227,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		794BC3C7B84CE9ADE0B69533 /* [CP] Check Pods Manifest.lock */ = {
+		6EAFA1B874693FD7DCD4150E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PokéRoster/Pods-PokéRoster-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PokéRoster/Pods-PokéRoster-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PokéRoster/Pods-PokéRoster-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A19B191F4326E5E2FA5B1DB5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -231,23 +264,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E52AFDAB79EE9E2490074725 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PokéRoster/Pods-PokéRoster-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PokéRoster/Pods-PokéRoster-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PokéRoster/Pods-PokéRoster-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -398,7 +414,7 @@
 		};
 		A8104AA823A97D8A0079B987 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6EA052CD9A2B75D9DC0A8F12 /* Pods-PokéRoster.debug.xcconfig */;
+			baseConfigurationReference = 5723BF7F48D962961C586BB5 /* Pods-PokéRoster.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -421,7 +437,7 @@
 		};
 		A8104AA923A97D8A0079B987 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B590B6F76DAD382EA19B6A7 /* Pods-PokéRoster.release.xcconfig */;
+			baseConfigurationReference = 8D2BE4A0862328BC20BB6D99 /* Pods-PokéRoster.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
