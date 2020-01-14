@@ -1,4 +1,4 @@
-target 'PokéRoster' do
+target 'pokeroster' do
 	#use_frameworks!
 
 	pod 'Firebase/Analytics'

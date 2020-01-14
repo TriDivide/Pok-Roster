@@ -1,13 +1,12 @@
 //
 //  AppDelegate.swift
-//  PokéRoster
+//  pokeroster
 //
-//  Created by Liam Smith on 17/12/2019.
-//  Copyright © 2019 Liam Smith. All rights reserved.
+//  Created by Liam Smith on 14/01/2020.
+//  Copyright © 2020 Liam Smith. All rights reserved.
 //
 
 import UIKit
-import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,7 +15,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        FirebaseApp.configure()
         return true
     }
 
