@@ -12,6 +12,8 @@ struct ContentView: View {
     @State private var email: String = ""
     @State private var password: String = ""
     
+    @State private var result: String = ""
+    
     var body: some View {
         VStack {
             TextField("Email", text: $email)
@@ -22,10 +24,11 @@ struct ContentView: View {
             
             Button(action: {
                 self.doLogin()
-                
             }) {
                 Text("Login")
             }
+            
+            Text(result)
         }
 
     }
@@ -42,6 +45,13 @@ struct ContentView: View {
             return
         }
         UserModel.instance.doLogin(email: email, password: password) {(error) in
+            if let error = error {
+                self.result = error.localizedDescription
+                return
+            }
+            
+            self.result = "Successfully logged in!!!"
+            
             
         }
     }
