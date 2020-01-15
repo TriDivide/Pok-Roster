@@ -20,7 +20,10 @@ struct ContentView: View {
             Text("hello \(email)")
             Text("Your password is: \(password)")
             
-            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+            Button(action: {
+                self.doLogin()
+                
+            }) {
                 Text("Login")
             }
         }
@@ -38,7 +41,6 @@ struct ContentView: View {
             print("Enter password")
             return
         }
-// doLogin(email: String, password: String, completion: @escaping(Error?) -> Void)
         UserModel.instance.doLogin(email: email, password: password) {(error) in
             
         }
