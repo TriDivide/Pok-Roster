@@ -1,23 +1,34 @@
 import Firebase
+import Combine
 
 class UserModel: BaseModel {
     
     public static let instance = UserModel()
     private let userRef = Firestore.firestore().collection("users")
     private var user: User?
+    
+    let loginStatus = PassthroughSubject<Bool, Never>()
+
+    var authStatus: Bool {
+        get { return isLoggedIn() }
+        set { self.loginStatus.send(newValue) }
+    }
 
     
     public func doLogin(email: String, password: String, completion: @escaping(Error?) -> Void) {
         Auth.auth().signIn(withEmail: email, password: password) {(user, error) in
             if let error = error {
                 completion(error)
+                self.authStatus = false
                 return
             }
             
             guard let _ = user else {
                 completion(UserModelError.AuthenticationFailed)
+                self.authStatus = false
                 return
             }
+            self.authStatus = true
             completion(nil)
         }
     }
@@ -26,13 +37,16 @@ class UserModel: BaseModel {
         Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
             if let error = error {
                 completion(error)
+                self.authStatus = false
                 return
             }
             
             guard let userId = authResult?.user.uid else {
                 completion(UserModelError.AuthenticationFailed)
+                self.authStatus = false
                 return
             }
+            self.authStatus = true
             self.setUserData(email: email, username: username, userId: userId, completion: completion)
         }
     }
@@ -45,6 +59,7 @@ class UserModel: BaseModel {
     }
     
     public func isLoggedIn() -> Bool {
+        self.authStatus = Auth.auth().currentUser != nil
         return Auth.auth().currentUser != nil
     }
     
@@ -52,6 +67,7 @@ class UserModel: BaseModel {
         do {
             try Auth.auth().signOut()
             self.user = nil
+            self.authStatus = false
             completion(nil)
         }
         catch {
