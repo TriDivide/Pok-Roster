@@ -15,20 +15,20 @@ struct LoginView: View {
     @State private var result: String = ""
     
     var body: some View {
-        VStack {
-            TextField("Email", text: $email)
-            SecureField("Password", text: $password)
-            
-            Text("hello \(email)")
-            Text("Your password is: \(password)")
-            
-            Button(action: {
-                self.doLogin()
-            }) {
-                Text("Login")
+        NavigationView {
+            VStack {
+                TextField("Email", text: $email)
+                SecureField("Password", text: $password)
+                Button(action: {
+                    self.doLogin()
+                }) {
+                    Text("Login")
+                }
+                
+                NavigationLink(destination: SignupView()) {
+                    Text("Sign Up")
+                }
             }
-            
-            Text(result)
         }
 
     }

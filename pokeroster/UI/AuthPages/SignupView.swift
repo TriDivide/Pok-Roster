@@ -18,18 +18,20 @@ struct SignupView: View {
     @State private var showAlert: Bool = false
     
     var body: some View {
-        VStack {
-            TextField("Username", text: $name)
-            TextField("Email Address", text: $email)
-            SecureField("Password", text: $password)
-            
-            Button(action: {
-                self.doSignUp()
-            }) {
-                Text("Login")
-            }.alert(isPresented: $showAlert) {
-                Alert(title: Text("Error"), message: Text(errorMessage), dismissButton: .default(Text("Ok")))
+        NavigationView {
+            VStack {
+                TextField("Username", text: $name)
+                TextField("Email Address", text: $email)
+                SecureField("Password", text: $password)
+                
+                Button(action: {
+                    self.doSignUp()
+                }) {
+                    Text("Login")
+                }.alert(isPresented: $showAlert) {
+                    Alert(title: Text("Error"), message: Text(errorMessage), dismissButton: .default(Text("Ok")))
 
+                }
             }
         }
     }
