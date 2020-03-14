@@ -34,18 +34,11 @@ struct NeumorphicView: View {
                         .mask(RoundedRectangle(cornerRadius: 20).fill(LinearGradient(Color.clear, Color("DarkShadow"))))
                 )
                 
-                RoundedRectangle(cornerRadius: 20)
-                    .fill(Color("Background"))
-                    .frame(width: 200, height: 150)
-                    .shadow(color: Color("LightShadow"), radius: 8, x: -8, y: -8)
-                    .shadow(color: Color("DarkShadow"), radius: 8, x: 8, y: 8)
+                RoundedNeumorphicCard(width: 200, height: 100, radius: 20)
                 
+                NeumorphicCircle(width: 100, height: 100)
                 
-                Circle()
-                    .fill(Color("Background"))
-                    .frame(width: 150, height: 150)
-                    .shadow(color: Color("LightShadow"), radius: 8, x: -8, y: -8)
-                    .shadow(color: Color("DarkShadow"), radius: 8, x: 8, y: 8)
+
             }
         }
     }
