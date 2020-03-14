@@ -13,6 +13,7 @@ struct RootView: View {
     @State var isLoggedIn = false
     
     var body: some View {
+        
         Group {
             isLoggedIn ? AnyView(DashboardView()) : AnyView(LoginView())
         }.onReceive(UserModel.instance.loginStatus) {
