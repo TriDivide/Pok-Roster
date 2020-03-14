@@ -22,7 +22,7 @@ struct NeumorphicView: View {
                 .frame(width: 300, height: 180)
                 .overlay(
                     RoundedRectangle(cornerRadius: 20)
-                        .stroke(Color.gray, lineWidth: 4)
+                        .stroke(Color("DarkShadow"), lineWidth: 4)
                         .blur(radius: 4)
                         .offset(x: 2, y: 2)
                         .mask(RoundedRectangle(cornerRadius: 20).fill(LinearGradient(Color("DarkShadow"), Color.clear)))

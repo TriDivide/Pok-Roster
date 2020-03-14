@@ -24,6 +24,8 @@
 		A8DD740623D65755004E23EF /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DD740523D65755004E23EF /* RootView.swift */; };
 		A8F1D9CB23D10C050097AA18 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F1D9CA23D10C050097AA18 /* SignupView.swift */; };
 		A8F1D9CD23D10C5A0097AA18 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F1D9CC23D10C5A0097AA18 /* DashboardView.swift */; };
+		A8F8BDA8241D2617008AEB28 /* NeumorphicRoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F8BDA7241D2616008AEB28 /* NeumorphicRoundedTextField.swift */; };
+		A8F8BDAA241D325A008AEB28 /* RoundedNeumorphicCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F8BDA9241D325A008AEB28 /* RoundedNeumorphicCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,10 +45,12 @@
 		A8DD39E123CFB760007CC4CB /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		A8DD39E323CFB76B007CC4CB /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		A8DD39E523CFB81F007CC4CB /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
-		A8DD39E723CFBC3B007CC4CB /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		A8DD39E723CFBC3B007CC4CB /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "pokeroster/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		A8DD740523D65755004E23EF /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		A8F1D9CA23D10C050097AA18 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		A8F1D9CC23D10C5A0097AA18 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		A8F8BDA7241D2616008AEB28 /* NeumorphicRoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicRoundedTextField.swift; sourceTree = "<group>"; };
+		A8F8BDA9241D325A008AEB28 /* RoundedNeumorphicCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedNeumorphicCard.swift; sourceTree = "<group>"; };
 		C2D28021B4607BF20CBFFA66 /* libPods-pokeroster.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pokeroster.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -102,9 +106,9 @@
 			children = (
 				A86900D1241C54B50030C32A /* HelperFiles */,
 				A8F1D9C823D10BAE0097AA18 /* UI */,
-				A8DD39E723CFBC3B007CC4CB /* GoogleService-Info.plist */,
 				A8DD39DA23CFB6BB007CC4CB /* DataModel */,
 				A81EDF8723CE5A6700336241 /* AppDelegate.swift */,
+				A8DD39E723CFBC3B007CC4CB /* GoogleService-Info.plist */,
 				A81EDF8923CE5A6700336241 /* SceneDelegate.swift */,
 				A81EDF8D23CE5A6800336241 /* Assets.xcassets */,
 				A81EDF9223CE5A6800336241 /* LaunchScreen.storyboard */,
@@ -160,6 +164,7 @@
 		A8F1D9C823D10BAE0097AA18 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				A8F8BDA6241D25F9008AEB28 /* CustomElements */,
 				A8F1D9C923D10BE80097AA18 /* AuthPages */,
 				A8F1D9CC23D10C5A0097AA18 /* DashboardView.swift */,
 				A8DD740523D65755004E23EF /* RootView.swift */,
@@ -175,6 +180,15 @@
 				A8F1D9CA23D10C050097AA18 /* SignupView.swift */,
 			);
 			path = AuthPages;
+			sourceTree = "<group>";
+		};
+		A8F8BDA6241D25F9008AEB28 /* CustomElements */ = {
+			isa = PBXGroup;
+			children = (
+				A8F8BDA7241D2616008AEB28 /* NeumorphicRoundedTextField.swift */,
+				A8F8BDA9241D325A008AEB28 /* RoundedNeumorphicCard.swift */,
+			);
+			path = CustomElements;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,6 +312,7 @@
 				A81EDF8A23CE5A6700336241 /* SceneDelegate.swift in Sources */,
 				A81EDF8C23CE5A6700336241 /* LoginView.swift in Sources */,
 				A8DD740623D65755004E23EF /* RootView.swift in Sources */,
+				A8F8BDAA241D325A008AEB28 /* RoundedNeumorphicCard.swift in Sources */,
 				A86900D0241C52C30030C32A /* NeumorphicView.swift in Sources */,
 				A8F1D9CD23D10C5A0097AA18 /* DashboardView.swift in Sources */,
 				A86900D3241C54CA0030C32A /* Extensions.swift in Sources */,
@@ -305,6 +320,7 @@
 				A8DD39E423CFB76B007CC4CB /* UserModel.swift in Sources */,
 				A8DD39E623CFB81F007CC4CB /* Error.swift in Sources */,
 				A8DD39E223CFB760007CC4CB /* BaseModel.swift in Sources */,
+				A8F8BDA8241D2617008AEB28 /* NeumorphicRoundedTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
