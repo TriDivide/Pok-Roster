@@ -27,6 +27,9 @@
 		A8F8BDA8241D2617008AEB28 /* NeumorphicRoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F8BDA7241D2616008AEB28 /* NeumorphicRoundedTextField.swift */; };
 		A8F8BDAA241D325A008AEB28 /* RoundedNeumorphicCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F8BDA9241D325A008AEB28 /* RoundedNeumorphicCard.swift */; };
 		A8F8BDAC241D3553008AEB28 /* NeumorphicCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F8BDAB241D3553008AEB28 /* NeumorphicCircle.swift */; };
+		A8F8BDAE241D539A008AEB28 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F8BDAD241D539A008AEB28 /* Background.swift */; };
+		A8F8BDB0241D57F9008AEB28 /* NeumorphicRoundedSecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F8BDAF241D57F9008AEB28 /* NeumorphicRoundedSecureTextField.swift */; };
+		A8F8BDB2241D87F9008AEB28 /* NeumorphicRoundedButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F8BDB1241D87F9008AEB28 /* NeumorphicRoundedButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +56,9 @@
 		A8F8BDA7241D2616008AEB28 /* NeumorphicRoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicRoundedTextField.swift; sourceTree = "<group>"; };
 		A8F8BDA9241D325A008AEB28 /* RoundedNeumorphicCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedNeumorphicCard.swift; sourceTree = "<group>"; };
 		A8F8BDAB241D3553008AEB28 /* NeumorphicCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicCircle.swift; sourceTree = "<group>"; };
+		A8F8BDAD241D539A008AEB28 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		A8F8BDAF241D57F9008AEB28 /* NeumorphicRoundedSecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicRoundedSecureTextField.swift; sourceTree = "<group>"; };
+		A8F8BDB1241D87F9008AEB28 /* NeumorphicRoundedButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicRoundedButtonStyle.swift; sourceTree = "<group>"; };
 		C2D28021B4607BF20CBFFA66 /* libPods-pokeroster.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pokeroster.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -190,6 +196,8 @@
 				A8F8BDA7241D2616008AEB28 /* NeumorphicRoundedTextField.swift */,
 				A8F8BDA9241D325A008AEB28 /* RoundedNeumorphicCard.swift */,
 				A8F8BDAB241D3553008AEB28 /* NeumorphicCircle.swift */,
+				A8F8BDAD241D539A008AEB28 /* Background.swift */,
+				A8F8BDAF241D57F9008AEB28 /* NeumorphicRoundedSecureTextField.swift */,
 			);
 			path = CustomElements;
 			sourceTree = "<group>";
@@ -317,10 +325,12 @@
 				A8DD740623D65755004E23EF /* RootView.swift in Sources */,
 				A8F8BDAA241D325A008AEB28 /* RoundedNeumorphicCard.swift in Sources */,
 				A86900D0241C52C30030C32A /* NeumorphicView.swift in Sources */,
+				A8F8BDB0241D57F9008AEB28 /* NeumorphicRoundedSecureTextField.swift in Sources */,
 				A8F1D9CD23D10C5A0097AA18 /* DashboardView.swift in Sources */,
 				A86900D3241C54CA0030C32A /* Extensions.swift in Sources */,
 				A8F8BDAC241D3553008AEB28 /* NeumorphicCircle.swift in Sources */,
 				A8F1D9CB23D10C050097AA18 /* SignupView.swift in Sources */,
+				A8F8BDAE241D539A008AEB28 /* Background.swift in Sources */,
 				A8DD39E423CFB76B007CC4CB /* UserModel.swift in Sources */,
 				A8DD39E623CFB81F007CC4CB /* Error.swift in Sources */,
 				A8DD39E223CFB760007CC4CB /* BaseModel.swift in Sources */,

@@ -15,21 +15,33 @@ struct LoginView: View {
     @State private var result: String = ""
     
     var body: some View {
-        NavigationView {
-            VStack {
-                TextField("Email", text: $email)
-                SecureField("Password", text: $password)
-                Button(action: {
-                    self.doLogin()
-                }) {
-                    Text("Login")
-                }
-                
-                NavigationLink(destination: SignupView()) {
-                    Text("Sign Up")
+        GeometryReader { geometry in
+            NavigationView {
+                ZStack {
+                    Background()
+                    RoundedNeumorphicCard(width: CGFloat(geometry.size.width * 0.9), height: CGFloat(geometry.size.height * 0.85), radius: 20)
+                    VStack {
+                        NeumorphicRoundedTextField(input: self.$email, placeholder: "Email", width: CGFloat(geometry.size.width * 0.7), height: 40, radius: 20, alignment: .leading)
+                        
+                        Spacer()
+                            .frame(height: 20)
+                        
+                        NeumorphicRoundedSecureTextField(input: self.$password, placeholder: "Password", width: CGFloat(geometry.size.width * 0.7), height: 40, radius: 20, alignment: .leading)
+                        Button(action: {
+                            self.doLogin()
+                        }) {
+                            Text("Login")
+                        }
+
+                        NavigationLink(destination: SignupView()) {
+                            Text("Sign Up")
+                        }
+                    }
                 }
             }
+
         }
+        
 
     }
     

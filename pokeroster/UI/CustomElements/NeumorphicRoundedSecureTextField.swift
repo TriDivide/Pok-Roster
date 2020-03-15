@@ -1,5 +1,5 @@
 //
-//  NeumorphicRoundedTextField.swift
+//  NeumorphicRoundedSecureTextField.swift
 //  pokeroster
 //
 //  Created by Liam Smith on 14/03/2020.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct NeumorphicRoundedTextField: View {
+struct NeumorphicRoundedSecureTextField: View {
     @Binding var inputBinding: String
     @State private var input: String
     private var placeholder: String
@@ -34,7 +34,7 @@ struct NeumorphicRoundedTextField: View {
                 .frame(width: self.width, height: self.height)
             .overlay(
                 RoundedRectangle(cornerRadius: radius)
-                    .stroke(Color("DarkShadow"), lineWidth: 4)
+                    .stroke(Color("DarkShadow"), lineWidth: 8)
                     .blur(radius: 4)
                     .offset(x: 2, y: 2)
                     .mask(RoundedRectangle(cornerRadius: radius).fill(LinearGradient(Color("DarkShadow"), Color.clear)))
@@ -46,7 +46,7 @@ struct NeumorphicRoundedTextField: View {
                     .mask(RoundedRectangle(cornerRadius: radius).fill(LinearGradient(Color.clear, Color("DarkShadow"))))
             )
             
-            TextField(placeholder, text: $input)
+            SecureField(placeholder, text: $input)
                 .frame(width: self.width - 20, height: self.height - 10, alignment: alignment)
             }.frame(width: self.width, height: self.height, alignment: .center)
     }
