@@ -29,6 +29,7 @@ struct NeumorphicRoundedSecureTextField: View {
     
     var body: some View {
         ZStack() {
+            
             RoundedRectangle(cornerRadius: radius)
             .fill(Color("Background"))
                 .frame(width: self.width, height: self.height)
@@ -46,8 +47,14 @@ struct NeumorphicRoundedSecureTextField: View {
                     .mask(RoundedRectangle(cornerRadius: radius).fill(LinearGradient(Color.clear, Color("DarkShadow"))))
             )
             
-            SecureField(placeholder, text: $input)
-                .frame(width: self.width - 20, height: self.height - 10, alignment: alignment)
+            ZStack(alignment: .leading) {
+                if input.isEmpty {
+                    Text(placeholder).foregroundColor(Color("PlaceholderText"))
+                }
+                SecureField("", text: $input)
+                .foregroundColor(Color("DefaultText"))
+                    .frame(width: self.width - 20, height: self.height - 10, alignment: alignment)
+            }
             }.frame(width: self.width, height: self.height, alignment: .center)
     }
 }

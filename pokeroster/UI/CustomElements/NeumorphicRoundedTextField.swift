@@ -45,9 +45,14 @@ struct NeumorphicRoundedTextField: View {
                     .offset(x: -2, y: -2)
                     .mask(RoundedRectangle(cornerRadius: radius).fill(LinearGradient(Color.clear, Color("DarkShadow"))))
             )
-            
-            TextField(placeholder, text: $input)
-                .frame(width: self.width - 20, height: self.height - 10, alignment: alignment)
+            ZStack(alignment: .leading) {
+                if input.isEmpty {
+                    Text(placeholder).foregroundColor(Color("PlaceholderText"))
+                }
+                TextField("", text: $input)
+                .foregroundColor(Color("DefaultText"))
+                    .frame(width: self.width - 20, height: self.height - 10, alignment: alignment)
+            }
             }.frame(width: self.width, height: self.height, alignment: .center)
     }
 }
