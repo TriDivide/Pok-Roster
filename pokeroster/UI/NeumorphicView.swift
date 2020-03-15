@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct NeumorphicView: View {
+    
+    @State private var test = ""
     var body: some View {
         ZStack {
             Rectangle()
@@ -38,7 +40,7 @@ struct NeumorphicView: View {
                 
                 NeumorphicCircle(width: 100, height: 100)
                 
-
+                NeumorphicRoundedTextField(input: $test, placeholder: "Placeholder", width: 300, height: 50, radius: 20, alignment: .center)
             }
         }
     }
