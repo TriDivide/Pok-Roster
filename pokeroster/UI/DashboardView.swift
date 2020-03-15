@@ -12,7 +12,16 @@ struct DashboardView: View {
     
     var body: some View {
         VStack {
-        Text("Dashboard page")
+            Text("Dashboard page")
+            Button(action: {
+                UserModel.instance.doLogout() { error in
+                    if let error = error {
+                        print(error.localizedDescription)
+                    }
+                }
+            }) {
+                Text("Logout")
+            }
         }
     }
 }
