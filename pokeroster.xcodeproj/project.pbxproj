@@ -22,6 +22,7 @@
 		A8DD39E623CFB81F007CC4CB /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DD39E523CFB81F007CC4CB /* Error.swift */; };
 		A8DD39E823CFBC3B007CC4CB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8DD39E723CFBC3B007CC4CB /* GoogleService-Info.plist */; };
 		A8DD740623D65755004E23EF /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DD740523D65755004E23EF /* RootView.swift */; };
+		A8E97A33241E8F49000D0D4A /* NeumorphicRoundedTextButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E97A32241E8F49000D0D4A /* NeumorphicRoundedTextButtonStyle.swift */; };
 		A8F1D9CB23D10C050097AA18 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F1D9CA23D10C050097AA18 /* SignupView.swift */; };
 		A8F1D9CD23D10C5A0097AA18 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F1D9CC23D10C5A0097AA18 /* DashboardView.swift */; };
 		A8F8BDA8241D2617008AEB28 /* NeumorphicRoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F8BDA7241D2616008AEB28 /* NeumorphicRoundedTextField.swift */; };
@@ -50,6 +51,7 @@
 		A8DD39E523CFB81F007CC4CB /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		A8DD39E723CFBC3B007CC4CB /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "pokeroster/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		A8DD740523D65755004E23EF /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		A8E97A32241E8F49000D0D4A /* NeumorphicRoundedTextButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicRoundedTextButtonStyle.swift; sourceTree = "<group>"; };
 		A8F1D9CA23D10C050097AA18 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		A8F1D9CC23D10C5A0097AA18 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		A8F8BDA7241D2616008AEB28 /* NeumorphicRoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicRoundedTextField.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 		A8E97A31241E8F00000D0D4A /* Styles */ = {
 			isa = PBXGroup;
 			children = (
+				A8E97A32241E8F49000D0D4A /* NeumorphicRoundedTextButtonStyle.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8E97A33241E8F49000D0D4A /* NeumorphicRoundedTextButtonStyle.swift in Sources */,
 				A8DD39E023CFB74A007CC4CB /* User.swift in Sources */,
 				A81EDF8823CE5A6700336241 /* AppDelegate.swift in Sources */,
 				A81EDF8A23CE5A6700336241 /* SceneDelegate.swift in Sources */,
