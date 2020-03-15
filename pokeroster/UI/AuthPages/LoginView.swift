@@ -14,12 +14,15 @@ struct LoginView: View {
     
     @State private var result: String = ""
     
+    @State private var isNavigationBarHidden: Bool = true
+    
     var body: some View {
         GeometryReader { geometry in
-            NavigationView {
-                ZStack {
+           NavigationView {
+                ZStack(alignment: .center) {
                     Background()
-                    RoundedNeumorphicCard(width: CGFloat(geometry.size.width * 0.9), height: CGFloat(geometry.size.height * 0.85), radius: 20)
+                    RoundedNeumorphicCard(width: CGFloat(geometry.size.width * 0.9), height: CGFloat(geometry.size.height * 0.90), radius: 20)
+                    
                     VStack {
                         NeumorphicRoundedTextField(input: self.$email, placeholder: "Email", width: CGFloat(geometry.size.width * 0.7), height: 40, radius: 20, alignment: .leading)
                         
@@ -29,9 +32,9 @@ struct LoginView: View {
                         NeumorphicRoundedSecureTextField(input: self.$password, placeholder: "Password", width: CGFloat(geometry.size.width * 0.7), height: 40, radius: 20, alignment: .leading)
                         
                         Spacer()
-                            .frame(height: 20)
+                            .frame(height: 80)
                         
-                        NeumorphicRoundedTextButton(text: "Login", height: 65, width: CGFloat(geometry.size.width * 0.7), action: {
+                        NeumorphicRoundedTextButton(text: "Login", height: 50, width: CGFloat(geometry.size.width * 0.7), action: {
                             self.doLogin()
                         })
                         
@@ -39,12 +42,17 @@ struct LoginView: View {
                             .frame(height: 20)
                         
                         NavigationLink(destination: SignupView()) {
-                            NeumorphicRoundedTextButton(text: "Sign up", height: 65, width: CGFloat(geometry.size.width * 0.7), action: {
+                            NeumorphicRoundedTextButton(text: "Sign up", height: 50, width: CGFloat(geometry.size.width * 0.7), action: {
                                 print("navigating to signupView")
                                 
                             })
                         }
                     }
+                }
+                .navigationBarTitle("Hidden Title")
+                .navigationBarHidden(self.isNavigationBarHidden)
+                .onAppear {
+                    self.isNavigationBarHidden = true
                 }
             }
 
