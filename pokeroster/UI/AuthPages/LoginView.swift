@@ -28,12 +28,20 @@ struct LoginView: View {
                         
                         NeumorphicRoundedSecureTextField(input: self.$password, placeholder: "Password", width: CGFloat(geometry.size.width * 0.7), height: 40, radius: 20, alignment: .leading)
                         
-                        NeumorphicRoundedTextButton(text: "Login", action: {
+                        Spacer()
+                            .frame(height: 20)
+                        
+                        NeumorphicRoundedTextButton(text: "Login", height: 65, width: CGFloat(geometry.size.width * 0.7), textColor:  action: {
                             self.doLogin()
                         })
                         
+                        Spacer()
+                            .frame(height: 20)
+                        
                         NavigationLink(destination: SignupView()) {
-                            Text("Sign Up")
+                            NeumorphicRoundedTextButton(text: "Sign up", height: 65, width: CGFloat(geometry.size.width * 0.7), action: {
+                                print("navigating to signupView")
+                            })
                         }
                     }
                 }

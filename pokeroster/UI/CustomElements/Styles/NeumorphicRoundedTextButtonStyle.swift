@@ -9,6 +9,14 @@
 import SwiftUI
 
 struct NeumorphicRoundedTextButtonStyle: ButtonStyle {
+
+    private let width: CGFloat
+    private let height: CGFloat
+    
+    init(width: CGFloat, height: CGFloat) {
+        self.width = width
+        self.height = height
+    }
     
     func makeBody(configuration: Self.Configuration) -> some View {
         configuration.label
@@ -18,6 +26,7 @@ struct NeumorphicRoundedTextButtonStyle: ButtonStyle {
                 if configuration.isPressed {
                     RoundedRectangle(cornerRadius: 20)
                     .fill(Color("Background"))
+                    .frame(width: self.width, height: self.height)
                     .overlay(
                         RoundedRectangle(cornerRadius: 20)
                             .stroke(Color("DarkShadow"), lineWidth: 8)
@@ -34,6 +43,7 @@ struct NeumorphicRoundedTextButtonStyle: ButtonStyle {
                 } else {
                     RoundedRectangle(cornerRadius: 20)
                         .fill(Color("Background"))
+                        .frame(width: self.width, height: self.height)
                         .shadow(color: Color("LightShadow"), radius: 8, x: -8, y: -8)
                         .shadow(color: Color("DarkShadow"), radius: 8, x: 8, y: 8)
                 }

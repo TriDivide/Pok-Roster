@@ -42,9 +42,6 @@ struct NeumorphicView: View {
                 
                 NeumorphicRoundedTextField(input: $test, placeholder: "Placeholder", width: 300, height: 50, radius: 20, alignment: .center)
                 
-                NeumorphicRoundedTextButton(text: "Press me", action: {
-                    print("hello")
-                })
             }
         }
     }
