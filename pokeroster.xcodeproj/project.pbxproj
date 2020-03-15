@@ -29,7 +29,6 @@
 		A8F8BDAC241D3553008AEB28 /* NeumorphicCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F8BDAB241D3553008AEB28 /* NeumorphicCircle.swift */; };
 		A8F8BDAE241D539A008AEB28 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F8BDAD241D539A008AEB28 /* Background.swift */; };
 		A8F8BDB0241D57F9008AEB28 /* NeumorphicRoundedSecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F8BDAF241D57F9008AEB28 /* NeumorphicRoundedSecureTextField.swift */; };
-		A8F8BDB2241D87F9008AEB28 /* NeumorphicRoundedButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F8BDB1241D87F9008AEB28 /* NeumorphicRoundedButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,7 +57,6 @@
 		A8F8BDAB241D3553008AEB28 /* NeumorphicCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicCircle.swift; sourceTree = "<group>"; };
 		A8F8BDAD241D539A008AEB28 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		A8F8BDAF241D57F9008AEB28 /* NeumorphicRoundedSecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicRoundedSecureTextField.swift; sourceTree = "<group>"; };
-		A8F8BDB1241D87F9008AEB28 /* NeumorphicRoundedButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphicRoundedButtonStyle.swift; sourceTree = "<group>"; };
 		C2D28021B4607BF20CBFFA66 /* libPods-pokeroster.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pokeroster.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -169,6 +167,13 @@
 			path = Objects;
 			sourceTree = "<group>";
 		};
+		A8E97A31241E8F00000D0D4A /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
 		A8F1D9C823D10BAE0097AA18 /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +198,7 @@
 		A8F8BDA6241D25F9008AEB28 /* CustomElements */ = {
 			isa = PBXGroup;
 			children = (
+				A8E97A31241E8F00000D0D4A /* Styles */,
 				A8F8BDA7241D2616008AEB28 /* NeumorphicRoundedTextField.swift */,
 				A8F8BDA9241D325A008AEB28 /* RoundedNeumorphicCard.swift */,
 				A8F8BDAB241D3553008AEB28 /* NeumorphicCircle.swift */,
