@@ -17,20 +17,36 @@ struct SignupView: View {
     @State private var errorMessage: String = "ErrorMessage"
     @State private var showAlert: Bool = false
     
+    
     var body: some View {
-        NavigationView {
-            VStack {
-                TextField("Username", text: $name)
-                TextField("Email Address", text: $email)
-                SecureField("Password", text: $password)
-                
-                Button(action: {
-                    self.doSignUp()
-                }) {
-                    Text("Login")
-                }.alert(isPresented: $showAlert) {
-                    Alert(title: Text("Error"), message: Text(errorMessage), dismissButton: .default(Text("Ok")))
+        GeometryReader { geometry in
+            NavigationView {
+                ZStack {
+                    Background()
+                    RoundedNeumorphicCard(width: CGFloat(geometry.size.width * 0.8), height: CGFloat(geometry.size.height * 0.8), radius: 20)
+                    VStack {
+                        Spacer()
+                        NeumorphicRoundedTextField(input: self.$name, placeholder: "Username", width: CGFloat(geometry.size.width * 0.7), height: 40, radius: 20, alignment: .leading)
+                        
+                        Spacer().frame(height: 20)
+                        
+                        NeumorphicRoundedTextField(input: self.$email, placeholder: "Email Address", width: CGFloat(geometry.size.width * 0.7), height: 40, radius: 20, alignment: .leading)
+                        
+                        Spacer().frame(height: 20)
 
+                        NeumorphicRoundedSecureTextField(input: self.$password, placeholder: "Password", width: CGFloat(geometry.size.width * 0.7), height: 40, radius: 20, alignment: .leading)
+                        
+                        Spacer().frame(height: 60)
+
+                        NeumorphicRoundedTextButton(text: "Submit", height: 60, width: CGFloat(geometry.size.width * 0.7), action: {
+                            self.doSignUp()
+                        })
+//                            .alert(isPresented: self.$showAlert) {
+//                            Alert(title: Text("Error"), message: Text(self.errorMessage), dismissButton: .default(Text("Ok")))
+//                        }
+                        
+                        Spacer().frame(height: CGFloat(geometry.size.height * 0.1))
+                    }
                 }
             }
         }

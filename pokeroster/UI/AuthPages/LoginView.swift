@@ -43,10 +43,12 @@ struct LoginView: View {
                             .frame(height: 20)
                         
                         NavigationLink(destination: SignupView()) {
-                            NeumorphicRoundedTextButton(text: "Sign up", height: 50, width: CGFloat(geometry.size.width * 0.7), action: {
-                                print("navigating to signupView")
-                                
-                            })
+//                            NeumorphicRoundedTextButton(text: "Sign up", height: 50, width: CGFloat(geometry.size.width * 0.7), action: {
+//                                print("navigating to signupView")
+//
+//                            })
+                            
+                            Text("SignUp")
                         }
                         Spacer()
                             .frame(height: CGFloat(geometry.size.height * 0.1))

@@ -49,7 +49,7 @@ struct NeumorphicRoundedTextField: View {
                 if input.isEmpty {
                     Text(placeholder).foregroundColor(Color("PlaceholderText"))
                 }
-                TextField("", text: $input)
+                TextField("", text: $inputBinding)
                 .foregroundColor(Color("DefaultText"))
                     .frame(width: self.width - 20, height: self.height - 10, alignment: alignment)
             }

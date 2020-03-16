@@ -51,7 +51,7 @@ struct NeumorphicRoundedSecureTextField: View {
                 if input.isEmpty {
                     Text(placeholder).foregroundColor(Color("PlaceholderText"))
                 }
-                SecureField("", text: $input)
+                SecureField("", text: $inputBinding)
                 .foregroundColor(Color("DefaultText"))
                     .frame(width: self.width - 20, height: self.height - 10, alignment: alignment)
             }
