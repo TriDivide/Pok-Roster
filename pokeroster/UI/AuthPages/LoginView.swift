@@ -24,6 +24,7 @@ struct LoginView: View {
                     RoundedNeumorphicCard(width: CGFloat(geometry.size.width * 0.9), height: CGFloat(geometry.size.height * 0.90), radius: 20)
                     
                     VStack {
+                        Spacer()
                         NeumorphicRoundedTextField(input: self.$email, placeholder: "Email", width: CGFloat(geometry.size.width * 0.7), height: 40, radius: 20, alignment: .leading)
                         
                         Spacer()
@@ -32,7 +33,7 @@ struct LoginView: View {
                         NeumorphicRoundedSecureTextField(input: self.$password, placeholder: "Password", width: CGFloat(geometry.size.width * 0.7), height: 40, radius: 20, alignment: .leading)
                         
                         Spacer()
-                            .frame(height: 80)
+                            .frame(height: 100)
                         
                         NeumorphicRoundedTextButton(text: "Login", height: 50, width: CGFloat(geometry.size.width * 0.7), action: {
                             self.doLogin()
@@ -47,6 +48,8 @@ struct LoginView: View {
                                 
                             })
                         }
+                        Spacer()
+                            .frame(height: CGFloat(geometry.size.height * 0.1))
                     }
                 }
                 .navigationBarTitle("Hidden Title")
